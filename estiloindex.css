@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    border: 10px solid red;
+    position: relative;
+    min-height: 100vh;
+}
+
+.container{
+    background-image: url(./img/medialunas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    margin: auto;
+    padding: 1.2rem;
+    width: 100%;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    padding-bottom: 3em;
+    position: relative;
+    min-width: none;
+    
+}
+.nosotros{
+    background-image: url(./img/medialunas_argentinas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+.productos{
+    background-image: url(./img/medialunas_argentinas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+.serviciosempres{
+    background-image: url(./img/Facturas-de-panaderia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
+.contacto{
+    background-image: url(./img/panadería_imagen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
+a, a:active{
+    text-decoration: none;
+    color: #fff;
+}
+/*header index*/
+.df-navbar{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    background-color: #891619;
+    color: #fff;
+    padding: 15px;
+    margin: 10;
+    line-height: 3rem;
+    grid-area: header1;
+}  
+.df-navbar a:hover{
+    background-color: #fff;
+    color: black;
+}
+
+
+.df-ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    grid-area: df-ul;
+}
+.df-ul li{
+    margin: 15px;
+    
+}
+
+.df-ol{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 500px;
+    border: 2px solid black;
+    width: 100%;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    align-content:stretch;
+    list-style: none;
+    grid-area: df-ol;
+}
+.df-ol li{
+    background-color: #ae1116; 
+    width: 95%;
+    height: 20%; 
+    padding: 25px; 
+    margin: 8px;
+    background-origin:border-box;
+    text-align: center;
+    align-items:baseline;
+    
+}
+
+/*MAIN*/
+
+.nosotros.df-navbar{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    background-color: #891619;
+    color: #fff;
+    padding: 15px;
+    margin: 10;
+    line-height: 3rem;
+    grid-area: header2;
+    float: left;
+
+}  
+
+.df-ol {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows:repeat(3,auto);
+    grid-template-areas: 
+    "panes  dulces  salados"
+    "tortas masas   bombones"
+    "catering.......productos veganos";
+}
+
+
+/*FOOTER*/
+.bg-footer{
+    align-self:auto;
+    background-color: #891619;
+    text-align:center;
+    bottom: 0;
+    width: 100%;
+    padding: 2rem;
+    position: absolute;
+    color: #fff;
+    font-weight: 200;
+    display: flex;
+    justify-content: space-between;
+    grid-area: footer;
+}
+.bg-footer-nosotros{
+    background-color: #891619;
+    text-align:left;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1em;
+    color: #fff;
+    font-weight: 100;
+    bottom: 0;
+
+}
+
+
+@media screen and (max-width: 500px ){
+    .container{        
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: repeat(4,1fr);
+        justify-content: auto;
+        grid-template-areas: 
+        "header1 header1"
+        "df-ul df-ul"
+        "df-ol    df-ol"
+        "footer footer"  ;
+    }
+    
+}
+
+@media screen and (max-width: 480px){
+    .nosotros{
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: repeat(3, 1fr);
+        grid-template-areas: 
+        "header2    header2"
+        "section    section"
+        "footer     footer";
+    }
+}
