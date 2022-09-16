@@ -93,7 +93,6 @@ a, a:active{
     color: black;
 }
 
-
 .df-ul{
     display: flex;
     flex-direction: row;
@@ -120,7 +119,7 @@ a, a:active{
     list-style: none;
     grid-area: df-ol;
 }
-.df-ol li{
+.panes{
     background-color: #ae1116; 
     width: 95%;
     height: 20%; 
@@ -131,8 +130,79 @@ a, a:active{
     align-items:baseline;
     
 }
+.panes:hover{
+    background-color: aliceblue;
+    transition: all 2s ease;
+}
+.dulces{background-color: #ae1116; 
+    width: 95%;
+    height: 20%; 
+    padding: 25px; 
+    margin: 8px;
+    background-origin:border-box;
+    text-align: center;
+    align-items:baseline;}
 
-/*MAIN*/
+.dulces:hover{
+        background-color: aliceblue;
+        transition: all 2s ease;
+}
+.salados{background-color: #ae1116; 
+    width: 95%;
+    height: 20%; 
+    padding: 25px; 
+    margin: 8px;
+    background-origin:border-box;
+    text-align: center;
+    align-items:baseline;}
+
+.salados:hover{
+    background-color: aliceblue;
+    transition: all 2s ease;
+}
+.tortas{background-color: #ae1116; 
+    width: 95%;
+    height: 20%; 
+    padding: 25px; 
+    margin: 8px;
+    background-origin:border-box;
+    text-align: center;
+    align-items:baseline;}
+
+.tortas:hover{
+    background-color: aliceblue;
+    transition: all 2s ease;
+}
+
+.masas{background-color: #ae1116; 
+    width: 95%;
+    height: 20%; 
+    padding: 25px; 
+    margin: 8px;
+    background-origin:border-box;
+    text-align: center;
+    align-items:baseline;}
+
+.masas:hover{
+    background-color: aliceblue;
+    transition: all 2s ease;
+}
+.bombones{background-color: #ae1116; 
+    width: 95%;
+    height: 20%; 
+    padding: 25px; 
+    margin: 8px;
+    background-origin:border-box;
+    text-align: center;
+    align-items:baseline;}
+
+.bombones:hover{
+    background-color: gainsborog;
+    transition: all 2s ease;
+}
+
+
+    /*MAIN*/
 
 .nosotros.df-navbar{ 
     display: flex;
